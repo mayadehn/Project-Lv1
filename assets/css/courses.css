@@ -1,0 +1,193 @@
+/* =============================  All Courses  ============================= */
+
+#Courses {
+    margin-top: 56px;
+
+    .container {
+        .courses-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 32px;
+
+            h1 {
+                font-size: 36px;
+                font-family: "Exo", sans-serif;
+            }
+
+            .search-bar {
+                max-width: 350px;
+                display: flex;
+                gap: 20px;
+
+                .icon {
+                    padding-bottom: 10px;
+                }
+
+                .search {
+                    position: relative;
+
+                    input {
+                        width: 270px;
+                        border: none;
+                        border-bottom: 1px solid var(--black-color);
+                        font-size: 18px;
+                    }
+
+                    .search-icon {
+                        position: absolute;
+                        right: 0;
+                        bottom: 10px;
+                    }
+                }
+            }
+        }
+
+        .courses-cards {
+            margin-top: 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 35px;
+
+            .course {
+                max-width: 385px;
+                border-radius: 20px;
+                border: 1px solid #eaeaea;
+                position: relative;
+
+                .course-tag {
+                    position: absolute;
+                    top: 20px;
+                    left: 20px;
+                    background-color: var(--black-color);
+                    color: #fff;
+                    border-radius: 8px;
+                    padding: 8px 12px;
+                    font-weight: 500;
+                }
+
+                .course-img {
+                    width: 100%;
+                    object-fit: cover;
+                    border-radius: 20px 20px 0 0;
+                }
+
+                .course-details {
+                    padding: 20px;
+
+                    p span {
+                        font-weight: 500;
+                    }
+
+                    h3 {
+                        font-size: 20px;
+                        font-weight: 600;
+                        font-family: "Exo", sans-serif;
+                        margin-top: 12px;
+                    }
+
+                    .course-info {
+                        padding: 16px 0;
+                        display: flex;
+                        align-items: center;
+                        gap: 24px;
+                        border-bottom: 1px solid #eaeaea;
+
+                        div {
+                            display: flex;
+                            align-items: center;
+                            gap: 8px;
+                            color: var(--dark-gray);
+                            font-weight: 400;
+                        }
+                    }
+
+                    .course-footer {
+                        padding-top: 16px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        font-size: 18px;
+
+                        .price {
+                            display: flex;
+                            gap: 8px;
+
+                            p {
+                                color: var(--grey-color);
+                                text-decoration: line-through;
+                            }
+
+                            span {
+                                color: #55be24;
+                            }
+                        }
+
+                        a {
+                            font-weight: 500;
+                            font-size: 18px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+/* =============================  Pagination  ============================= */
+
+.pagination {
+    margin: 70px 0;
+
+    .container {
+        display: flex;
+        justify-content: center;
+        gap: 12px;
+
+        div {
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            border: 2px solid var(--light-gray);
+            font-size: 18px;
+            font-weight: 500;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .one {
+            color: white;
+            background-color: var(--black-color);
+        }
+    }
+}
+
+
+/* ============================ Responsive Design =========================== */
+@media screen and (max-width : 992px) {
+
+    #Courses {
+        .container {
+            .courses-header {
+                flex-direction: column;
+                align-items: start;
+
+                h1 {
+                    font-size: 32px;
+                }
+
+                .search-bar {
+                    .search {
+                        input {
+                            width: 230px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

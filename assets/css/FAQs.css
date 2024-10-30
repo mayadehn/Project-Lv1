@@ -1,0 +1,87 @@
+/* =============================  FAQs  ============================= */
+#FAQs {
+    margin-top: 56px;
+
+    .container {
+        .FAQs-container {
+            margin: 50px 0;
+            display: flex;
+            justify-content: space-between;
+            gap: 38px;
+
+            .FAQs-questions {
+                width: 50%;
+
+                .question {
+                    padding: 20px 30px;
+                    margin-bottom: 30px;
+                    border-radius: 8px;
+                    background-color: var(--light-gray);
+
+                    .what {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+
+                        .color {
+                            color: var(--primary-color);
+                        }
+
+                        h5 {
+                            font-family: "Exo", sans-serif;
+                            font-size: 16px;
+                            font-weight: 600;
+                        }
+
+                        .icon {
+                            color: var(--grey-color);
+                        }
+                    }
+
+                    .paragraph {
+                        margin-top: 20px;
+                        max-width: 534px;
+                        color: var(--dark-gray);
+                        font-size: 18px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+/* =============================  FAQs image ============================= */
+#FAQs-img {
+    .container {
+        .img-container {
+            max-width: 556px;
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+}
+
+
+/* ============================ Responsive Design =========================== */
+@media screen and (max-width: 992px) {
+
+    #FAQs {
+        .container {
+            .FAQs-container {
+                flex-direction: column;
+                gap: 0;
+
+                .FAQs-questions {
+                    width: 100%;
+
+                    .question {
+                        margin-bottom: 16px;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,479 @@
+.hero-section {
+    background-image: url("./../images/hero-bg.png");
+    background-position: center;
+    background-size: cover;
+    height: calc(100vh - 72px);
+    margin-top: 72px;
+
+    .container {
+        height: 100%;
+        display: flex;
+        align-items: center;
+    }
+
+    .hero-content {
+        h1 {
+            max-width: 375px;
+            font-size: 48px;
+            font-weight: 600;
+            font-family: "Exo";
+        }
+
+        p {
+            max-width: 520px;
+            margin: 24px 0 20px;
+            font-size: 18px;
+            color: var(--dark-gray);
+        }
+    }
+}
+
+/* ============================= Shared Btns ============================= */
+.shared-btn1 {
+    display: block;
+}
+
+.shared-btn2 {
+    display: none;
+    margin-top: 25px;
+    margin-inline: auto;
+}
+
+
+/* =============================== Categories =============================== */
+#categories {
+    margin-top: 56px;
+
+    .container {
+        .categories-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 50px;
+        }
+
+        .categories-cards {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 31px;
+
+            .category {
+                width: 234px;
+                height: 234px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                border-radius: 20px;
+                border: 1px solid #eaeaea;
+                transition: 0.4s;
+
+                &:hover {
+                    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+                    transform: translateY(-16px);
+
+                    h3 {
+                        color: var(--primary-color);
+                    }
+                }
+
+                h3 {
+                    font-size: 20px;
+                    font-weight: 600;
+                    font-family: "Exo", sans-serif;
+                    margin: 24px 0 12px;
+                }
+
+
+            }
+
+        }
+    }
+}
+
+/* ============================ Courses Section ============================ */
+#courses {
+    .container {
+        .courses-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 50px;
+        }
+
+        .courses-cards {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 35px;
+
+            .course {
+                max-width: 385px;
+                border-radius: 20px;
+                border: 1px solid #eaeaea;
+                position: relative;
+
+                .course-tag {
+                    position: absolute;
+                    top: 20px;
+                    left: 20px;
+                    background-color: var(--black-color);
+                    color: #fff;
+                    border-radius: 8px;
+                    padding: 8px 12px;
+                    font-weight: 500;
+                }
+
+                .course-img {
+                    width: 100%;
+                    object-fit: cover;
+                    border-radius: 20px 20px 0 0;
+                }
+
+                .course-details {
+                    padding: 20px;
+
+                    p span {
+                        font-weight: 500;
+                    }
+
+                    h3 {
+                        font-size: 20px;
+                        font-weight: 600;
+                        font-family: "Exo", sans-serif;
+                        margin-top: 12px;
+                    }
+
+                    .course-info {
+                        padding: 16px 0;
+                        display: flex;
+                        align-items: center;
+                        gap: 24px;
+                        border-bottom: 1px solid #eaeaea;
+
+                        div {
+                            display: flex;
+                            align-items: center;
+                            gap: 8px;
+                            color: var(--dark-gray);
+                            font-weight: 400;
+                        }
+                    }
+
+                    .course-footer {
+                        padding-top: 16px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        font-size: 18px;
+
+                        .price {
+                            display: flex;
+                            gap: 8px;
+
+                            p {
+                                color: var(--grey-color);
+                                text-decoration: line-through;
+                            }
+
+                            span {
+                                color: #55be24;
+                            }
+                        }
+
+                        a {
+                            font-weight: 500;
+                            font-size: 18px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* ============================ Explore Banner =========================== */
+#explore {
+    .container {
+        background-image: url("./../images/banner1.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        border-radius: 20px;
+        padding: 54px 50px;
+
+        .explore-content {
+            span {
+                font-size: 16px;
+                font-weight: 600;
+                font-family: "Exo";
+                margin-bottom: 12px;
+                color: var(--dark-gray);
+            }
+
+            h2 {
+                font-size: 32px;
+                font-weight: 600;
+                font-family: "Exo";
+            }
+
+            p {
+                margin: 24px 0 20px;
+                color: var(--dark-gray);
+                max-width: 450px;
+            }
+        }
+    }
+}
+
+/* ============================ Statistics =========================== */
+#statistics {
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 30px;
+
+        .card {
+            padding: 40px 0;
+            width: 284px;
+            height: 161px;
+            text-align: center;
+            border-radius: 20px;
+            background-color: #F5F5F5;
+
+            span {
+                padding-bottom: 16px;
+                font-size: 32px;
+                font-weight: 600;
+                font-family: "Exo", sans-serif;
+                color: var(--primary-color);
+            }
+
+            h4 {
+                font-size: 18px;
+                font-weight: 500;
+            }
+
+        }
+    }
+}
+
+/* ============================ About Section=========================== */
+#about {
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 24px;
+
+        .about-img {
+            max-width: 537px;
+
+            img {
+                width: 100%;
+            }
+        }
+
+        .about-content {
+            max-width: 520px;
+
+            h2 {
+                font-size: 32px;
+                font-weight: 600;
+                font-family: "Exo", sans-serif;
+            }
+
+            p {
+                margin: 24px 0 16px;
+                font-size: 18px;
+                color: var(--dark-gray);
+            }
+
+            ul {
+                margin-bottom: 20px;
+
+                li {
+                    margin-bottom: 12px;
+
+                    .check {
+                        color: #55BE24;
+                        padding-right: 8px;
+                    }
+
+                }
+            }
+
+        }
+
+    }
+}
+
+/* ============================ Join Our Banner =========================== */
+#join-our {
+    .container {
+        background-image: url("./../images/banner2.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 100% 100%;
+        padding: 65px 18px;
+        border-radius: 20px;
+
+        .join-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 24px;
+
+            .description {
+                display: flex;
+                align-items: center;
+                gap: 32px;
+
+                div {
+                    width: 120px;
+                    height: 120px;
+                    border-radius: 50%;
+                    background-color: #ffffff;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+
+                h4 {
+                    font-size: 20px;
+                    font-weight: 600;
+                    font-family: "Exo", sans-serif;
+                }
+            }
+
+            .join-btns {
+                display: flex;
+                align-items: center;
+                gap: 20px;
+
+                .btn1 {
+                    border: 2px solid var(--primary-color);
+                    color: var(--primary-color);
+                }
+            }
+        }
+    }
+}
+
+
+/* ============================ Responsive Design =========================== */
+@media screen and (max-width : 992px) {
+
+    .shared-btn1 {
+        display: none;
+    }
+
+    .shared-btn2 {
+        display: block;
+    }
+
+    .hero-section {
+        background-image: linear-gradient(to right, #fff5be 0%, #d0f7ea 100%);
+        height: 480px;
+
+        .hero-content {
+            width: 100%;
+            text-align: center;
+
+            h1 {
+                max-width: 100%;
+                font-size: 32px;
+            }
+
+            p {
+                max-width: 100%;
+            }
+        }
+    }
+
+    #categories {
+        .container {
+            .categories-header {
+                justify-content: center;
+                text-align: center;
+            }
+
+            .categories-cards {
+                gap: 25px;
+            }
+        }
+    }
+
+    #courses {
+        .container {
+            .courses-header {
+                justify-content: center;
+                text-align: center;
+            }
+        }
+    }
+
+    #explore {
+        .container {
+            background-image: linear-gradient(to right, #b5ffe7 0%, #fdc1c1 100%);
+            max-width: 100%;
+            margin: 0;
+            border-radius: 0;
+            text-align: center;
+
+            .explore-content {
+                p {
+                    max-width: 100%;
+                }
+            }
+        }
+    }
+
+    #statistics {
+        .container {
+            flex-direction: column;
+        }
+    }
+
+    #about {
+        .container {
+            flex-direction: column-reverse;
+        }
+    }
+
+    #join-our {
+        .container {
+            max-width: 100%;
+            margin: 0;
+            border-radius: 0;
+            text-align: center;
+
+            .join-content {
+                flex-direction: column;
+
+                .description {
+                    flex-direction: column;
+
+                    div {
+                        width: 80px;
+                        height: 80px;
+
+                        img {
+                            width: 38px;
+                        }
+                    }
+                }
+
+                .join-btns {
+                    flex-direction: column;
+                }
+            }
+
+        }
+    }
+}

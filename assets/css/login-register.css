@@ -1,0 +1,74 @@
+/* ============================ Login - Register =========================== */
+
+#login-register {
+    margin: 56px 0 70px;
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        gap: 30px;
+
+        .form {
+            width: 50%;
+
+            form {
+                margin: 30px 0;
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+
+                input {
+                    padding: 10px 16px;
+                    border: 1px solid var(--grey-color);
+                    border-radius: 8px;
+                }
+
+                .password {
+                    position: relative;
+
+                    input {
+                        width: 100%;
+                    }
+
+                    .eye {
+                        position: absolute;
+                        right: 12px;
+                        bottom: 12px;
+                        color: var(--grey-color);
+                    }
+                }
+            }
+        }
+
+        .login {
+            .remember {
+                display: flex;
+                align-items: center;
+                gap: 4px;
+
+                label {
+                    color: var(--dark-gray);
+                }
+            }
+
+            a {
+                font-size: 18px;
+            }
+        }
+    }
+}
+
+
+/* ============================ Responsive Design =========================== */
+@media screen and (max-width : 992px) {
+
+    #login-register {
+        .container {
+            flex-direction: column;
+
+            .form {
+                width: 100%;
+            }
+        }
+    }
+}
